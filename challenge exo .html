@@ -21,11 +21,70 @@
                
   
     border: none;
-    border-radius: 5px;
+                 border-radius: 5px;
     font-weight: bold;
     vertical-align: middle;
     padding-top: 15px;
     padding-bottom: 15px;
+            }
+            .Location{
+                display: block ;
+                color: gray;
+                margin-bottom: 10px;
+                width: 400px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:10px ;
+                border: none;
+                background-color: rgb(240, 240, 240);
+                border-width: 1px;
+                border-style: solid;
+                font-size: 15px;
+            }
+            .destination{
+                display: block ;
+                color: gray;
+                margin-bottom: 10px;
+                width: 400px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:10px ;
+                border: none;
+                background-color: rgb(240, 240, 240);
+                border-width: 1px;
+                border-style: solid;
+                
+
+            }
+            .request{
+                margin-top: 15px;
+                margin-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:15px ;
+                border: none;
+                background-color: black;
+                color: white;
+                font-size: 14px;
+                width: 150px;
+                
+
+            }
+            .Schedule{
+                margin-top: 15px;
+                margin-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:15px ;
+                border: none;
+                background-color: rgb(240, 240, 240);
+                color: black;
+                font-size: 16px;
+                width: 200px;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
             }
         </style>
 
@@ -36,5 +95,10 @@
         <input type="text" placeholder="Last Name " class="last">
         <input type="text" placeholder="Email " class ="email">
         <BUtton class="sign  ">Sign Up </BUtton>
+        <p >Request a ride now </p>
+        <input type ="text" placeholder="Enter pickup location" class="Location">
+        <input type="text" placeholder="Entrer destination" class="destination" >
+        <button class ="request">Request now</button>
+        <button class="Schedule">Schedule for later </button>
     </body>
 </html>
