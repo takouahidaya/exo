@@ -1,0 +1,36 @@
+
+
+.img{
+    width: 200px; 
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-right: 15px;
+ }
+ .two{
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+ }
+ 
+ button{
+     background-color: rgb(76, 76, 247);
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding:10px 10px 10px 10px ;
+     margin-bottom: 8px;
+     margin-left: 5px;
+ }
+ .oliv{
+     font-family: Arial;
+ font-weight: bold;
+margin-bottom: 12px;
+ margin-left: 5px;
+ }
+ .friends{
+     font-family: Arial;
+     color: rgb(194, 189, 189);
+     padding-left: 5px;
+     margin-top: -8px;
+     
+ }
