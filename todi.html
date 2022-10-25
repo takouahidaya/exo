@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script>
+            let titl =document.createElement("Title");
+        titl .innerText = "takouahidaya" ;
+            document.body.appendChild(titl );
+            
+        </script>
+        <!--document.title="takouahidayaa"; pour titre-->
+
+    </header>
+    <body>
+        <script>
+            
+            let month ="November ";
+            let day="9";
+            let year= "2021";
+            let c=4+5*3;
+            let d =(4+5)*3;
+            let one= "cooking"
+            let age=24;
+            let massage='I am'+age+'years old';
+            let elmt=document.createElement("div");
+            elmt.innerText = one ;
+            document.body.appendChild(elmt);
+        </script>
+        <hr>
+        <script>
+            let button=document.createElement("button");
+            button.innerText = "Click Me" ;
+            document.body.appendChild(button);
+
+
+
+            function addtodo(){
+        let element4=document.createElement("div");
+    element4.innerText = one ;
+    document.body.appendChild(element4);
+    }
+    addtodo();
+    addtodo();
+
+
+
+    function addtodo1(title){
+        let element4=document.createElement("div");
+    element4.innerText = title ;
+    document.body.appendChild(element4);
+    }
+    addtodo1("KHABABA");
+    addtodo1("Takoua");
+   let todo =["khababa","takwa"]
+   
+        </script>
+
+            
+
+
+            
+
+            
+            
+       
+        <button>Press me</button>
+        
+        <div>Get groceries</div>
+        <div>Wash car</div>
+        <div>Make dinnze</div>
+        <hr>
+        
+        <input type="text" name="" id="todo_title">
+        <input type="date" id="data">
+        <button onclick="todoo()">ADD TO DO</button>
+        <div id="todo-list"></div>
+     <script>
+        let todo2=[ {
+            title:"pomme",
+            due:"2020-10-10"
+        },
+        {title:"peche",
+            due:"2020-10-10"
+
+        },
+        {title:"banana",
+            due:"2020-10-10"
+
+        }];
+        render();
+            
+    function todoo(){
+           let tex=document.getElementById("todo_title") ;
+           let tit=tex.value;
+           const date=document.getElementById('date');
+           const due=date.value;
+            todo2.push({
+                title:date,
+                due:due
+            });
+            render();
+        }
+        function render(){
+            document.getElementById("todo-list").innerHTML="";
+            todo2.forEach(function(todo1){
+                let a= document.createElement('div');
+                a.innerText=todo.title;
+                document.body.appendChild(a);
+            }
+            )
+        }
+</script>
+        
+        
+
+
+    </body>
+</html>
