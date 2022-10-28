@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function cartTotal( arrayc){
+                let total=0;
+                arrayc.forEach(function(item) {
+                    total=total+item.price*item.quantity;
+                });
+                console.log(total);
+            }
+            
+            cartTotal([
+  { name: 'Apple', price: 4, quantity: 2 },
+  { name: 'Orange', price: 3, quantity: 3 }
+]);
+        </script>
+        <div id="receipt"></div>
+        <script>
+            const receipt = document.getElementById('receipt');
+            function displayReceipt( arrayc){
+                receipt.innerHTML = '';
+                
+                arrayc.forEach(function(item){
+                    const receiptLine =document.createElement('div');
+                    receiptLine.innertext= item.name +" $ "+item.price*item.quantity;
+                    receipt.appendChild("receiptLine");
+
+
+                    
+            });
+            let total=0;
+                arrayc.forEach(function(item) {
+                    total=total+item.price*item.quantity;
+                });
+                const totalLine = document.createElement('div');
+    totalLine.innerText = 'Cart total = $' + cartTotal;
+    receipt.appendChild(totalLine);
+  }
+                
+                
+  displayReceipt([
+    { name: 'Apple', price: 4, quantity: 2 },
+    { name: 'Orange', price: 3, quantity: 3 }
+  ]);
+            
+        </script>
+
+    </body>
+</html>

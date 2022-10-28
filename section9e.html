@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const cart1=document.getElementById("cart");
+            function affiche(food){
+            
+            let div1=document.createElement("div");
+            div1.innerText=food;
+            document.body.appendChild(div1);
+            }
+            function clear(){
+                cart1.remove();
+            }
+
+        </script>
+        <button id="Apple" onclick="affiche('Apple')">Apple</button>
+        <button id="Tomato" onclick="affiche('Tomato')">Tomato</button>
+        <button id="Eggs" onclick="affiche('Eggs')">Eggs</button>
+        <button id="Clear" onclick="clear()">Clear</button>
+        <div id="cart"></div>
+        <hr>
+        <input type="text" id="textname">
+        <button id ="cm" onclick="transformercm()" >Convert to  cm </button>
+        <button id=" inch" onclick="transformer()"> convert to inch </button>
+        <script>
+            
+            function transformercm(){
+                let vrb1=document.getElementById("textname");
+                let vrb2=vrb1.value;
+                 let vrb3=+vrb2* 2.54;
+                 let rest=document.createElement("div");
+                 rest.innerText=vrb3;
+                 document.body.appendChild(rest);
+
+
+            }
+        </script>
+
+    </body>
+</html>

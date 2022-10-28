@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+           function changetodo(){
+            let b=document.getElementById("todo-button");
+            b.innerText="Done";
+
+           }
+           let count=0;
+           function incrementfun(){
+            count=count+1;
+            let div=document.getElementById("counter");
+            div.innerText=count;
+
+
+           }
+           function decfun(){
+            let count=0;
+           function incrementfun(){
+            count=count-1;
+            let div=document.getElementById("counter1");
+            div.innerText=count;
+
+           }
+           function affiche(){
+            let text=document.getElementById("text");
+            let elmt=text.value;
+            
+            let div1=doc.createElement("div");
+            div1.innerText=elmt;
+            document.body.appendChild(div1);
+           }
+        </script>
+    </body>
+    <button id ="todo-button" onclick="changetodo()">To do </button>
+    <div id ="counter" onclick="incrementfun()">0</div>
+    <div id ="counter1" onclick="decfun()">0</div>
+    <input type="text"  id="text">
+    <button id ="btn" onclick="affiche">Afficher</button>
+    
+</html>
