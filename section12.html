@@ -1,0 +1,17 @@
+<script>
+    function aboveFreezing( arraytemps){
+         const temps=arraytemps.filter(function(item){
+            return arraytemps>32;
+        }
+        );
+        return temps;
+        aboveFreezing([40, 67, 8, 29, 100, -3, 0]);
+
+    }
+    function removeRed(foodArray){
+        return foodArray.filter(function (food) {
+    return food.color !== 'red';
+  });
+        
+    }
+</script>

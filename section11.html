@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let total=0;
+        function createCart(objectfood){
+            const f=Object.keys(objectfood);
+            
+            f.forEach(function( food) {
+                let elmt=document.createElement("div");
+                elmt.innerText=food.name + "$"+ food.price;
+                let elmt1=document.createElement('button');
+                elmt1.innerHTML='Add';
+                elmt1.onclick=function(){
+                     total=total+food.price;
+                };
+                elmt.appendChild(elmt1);
+                document.body.appendChild(elmt);
+
+
+                
+            });
+        }
+        createCart({ Apple: 3, Orange: 4, Egg: 2 });
+    </script>
+    <body>
+        
+    </body>
+</html>
